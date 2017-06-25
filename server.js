@@ -8,10 +8,10 @@ app.get('/ligarNote', function(req, res){
         if(err){
             winston.error("Erro ao ligar note:");
             winston.error(err);
-            res.send(JSON.stringfy(false));
+            res.send(JSON.stringify(false));
         }else{
             winston.info("Commando [wol] executado com sucesso!");
-            res.send(JSON.stringfy(true));
+            res.send(JSON.stringify(true));
         }
     });
 });
@@ -21,10 +21,10 @@ app.get('/desligarNote', function(req, res){
         if(err){
             winston.error("Erro ao desligar note:");
             winston.error(err);
-            res.send(JSON.stringfy(false));
+            res.send(JSON.stringify(false));
         }else{
             winston.info("Commando [desligarnote] executado com sucesso!");
-            res.send(JSON.stringfy(true));
+            res.send(JSON.stringify(true));
         }
     });
 });
