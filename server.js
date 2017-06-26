@@ -3,6 +3,10 @@ const winston = require('winston');
 const exec = require('child_process').exec;
 const app = express();
 
+app.get('/ping', function(req, res){
+    res.send(JSON.stringify(true));
+});
+
 app.get('/ligarNote', function(req, res){
     exec('wol', (err, stdout) => {
         if(err){
