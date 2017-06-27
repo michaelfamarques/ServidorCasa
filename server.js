@@ -21,7 +21,7 @@ app.get('/ligarNote', function(req, res){
 });
 
 app.get('/desligarNote', function(req, res){
-    exec('desligarnote', (err, stdout) => {
+    exec('desligar-note', (err, stdout) => {
         if(err){
             winston.error("Erro ao desligar note:");
             winston.error(err);
