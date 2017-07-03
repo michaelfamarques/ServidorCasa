@@ -1,0 +1,6 @@
+{
+    apps: [{
+        name: "ServidorCasa",
+        script: "./server.js"   
+    }]
+}
